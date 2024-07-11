@@ -2,7 +2,6 @@
 Simple Chainlit app to have interaction with website URLs.
 
 ### Chat with your documents 🚀
-- [OpenAI model](https://platform.openai.com/docs/models) as llm
 - [Ollama](https://ollama.ai/) and `mistral` as llm
 - [LangChain](https://python.langchain.com/en/latest/modules/models/llms/integrations/huggingface_hub.html) as a Framework for LLM
 - [Chainlit](https://docs.chainlit.io/) for deploying.
