@@ -1,32 +1,27 @@
-# chat-with-website
-Simple Streamlit as well as Chainlit app to have interaction with your website URL.
+# Ollama-Mistral-to-Chat-With-Websites
+Simple Chainlit app to have interaction with website URLs.
 
 ### Chat with your documents 🚀
-- [OpenAI model](https://platform.openai.com/docs/models) as Large Language model
-- [Ollama](https://ollama.ai/) and `mistral` as Large Language model
+- [OpenAI model](https://platform.openai.com/docs/models) as llm
+- [Ollama](https://ollama.ai/) and `mistral` as llm
 - [LangChain](https://python.langchain.com/en/latest/modules/models/llms/integrations/huggingface_hub.html) as a Framework for LLM
-- [Streamlit](https://streamlit.io/) as well as [Chainlit](https://docs.chainlit.io/) for deploying.
+- [Chainlit](https://docs.chainlit.io/) for deploying.
 
 ## System Requirements
 
-You must have Python 3.9 or later installed. Earlier versions of python may not compile.  
+must have Python 3.9 or later installed. 
 
 ---
 
 ## Steps to Replicate 
 
-1. Fork this repository and create a codespace in GitHub as I showed you in the youtube video OR Clone it locally.
+1. Clone it locally.
 ```
-git clone https://github.com/sudarshan-koirala/chat-with-website.git
-cd chat-with-website
+git clone [https://github.com/shum05/OllamaMistral-to-Chat-With-websites.git]
+cd OllamaMistral-to-Chat-With-websites
 ```
 
-2. Rename example.env to .env with `cp example.env .env`and input the OpenAI API key as follows. Get OpenAI API key from this [URL](https://platform.openai.com/account/api-keys). You need to create an account in OpenAI webiste if you haven't already.
-   ```
-   OPENAI_API_KEY=your_openai_api_key
-   ```
-
-   For langsmith, take the environment variables from [LangSmith](https://smith.langchain.com/) website
+2. take the environment variables from [LangSmith](https://smith.langchain.com/) website
    
 3. Create a virtualenv and activate it
    ```
@@ -39,13 +34,6 @@ cd chat-with-website
    ```
 
 5. Run the following command in your terminal to start the chat UI:
-   ```
-   streamlit run chat_with_website_openai.py
-   streamlit run chat_with_website_ollama.py
-   ```
-
-6. For chainlit, use the following command in your terminal.
-```
-python3 ingest.py #for ingesting
-chainlit run main.py #for chainlit ui
+   python3 ingest.py #for ingesting
+   chainlit run main.py #for chainlit ui
 ```
