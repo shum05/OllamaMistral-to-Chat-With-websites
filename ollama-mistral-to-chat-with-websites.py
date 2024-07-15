@@ -1,6 +1,6 @@
 import os
 
-import streamlit as st
+
 from dotenv import load_dotenv
 from langchain.chains import RetrievalQA
 #from langchain.chat_models import ChatOpenAI
@@ -10,7 +10,7 @@ from langchain_community.embeddings import OllamaEmbeddings
 from langchain_community.llms import Ollama
 from langchain.text_splitter import CharacterTextSplitter
 from langchain_community.vectorstores import Chroma
-
+import chainlit as cl
 # Load environment variables from .env file (Optional)
 load_dotenv()
 
@@ -24,13 +24,13 @@ LANGCHAIN_PROJECT=os.getenv("LANGCHAIN_PROJECT")
 
 def main():
     # Set the title and subtitle of the app
-    st.title('🦜🔗 Chat With Website')
-    st.subheader('Input your website URL, ask questions, and receive answers directly from the website.')
+    cl.title('🦜🔗 Chat With Website')
+    cl.subheader('Input your website URL, ask questions, and receive answers directly from the website.')
 
-    url = st.text_input("Insert The website URL")
+    url = cl.text_input("Insert The website URL")
 
-    prompt = st.text_input("Ask a question (query/prompt)")
-    if st.button("Submit Query", type="primary"):
+    prompt = cl.text_input("Ask a question (query/prompt)")
+    if cl.button("Submit Query", type="primary"):
         ABS_PATH: str = os.path.dirname(os.path.abspath(__file__))
         DB_DIR: str = os.path.join(ABS_PATH, "db")
 
@@ -67,7 +67,7 @@ def main():
 
         # Run the prompt and return the response
         response = qa(prompt)
-        st.write(response)
+        cl.write(response)
         
 
 if __name__ == '__main__':

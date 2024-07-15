@@ -1,4 +1,5 @@
 langchain
+langchain-community
 langchainhub
 bs4
 chromadb

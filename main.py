@@ -60,7 +60,7 @@ async def start():
     welcome_message = cl.Message(content="Starting the bot...")
     await welcome_message.send()
     welcome_message.content = (
-        "Hi, Welcome to Chat With Documents using Ollama (mistral model) and LangChain."
+        "Hi, Welcome to Chat With websites using Ollama (mistral model) and LangChain."
     )
     await welcome_message.update()
     cl.user_session.set("chain", chain)

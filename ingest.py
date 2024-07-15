@@ -25,7 +25,7 @@ def create_vector_database():
 
     """
     # Initialize loader
-    urls = ['https://docs.gpt4all.io/', 'https://ollama.com/library/llama2']
+    urls = ['https://en.wikipedia.org/wiki/Haile_Gebrselassie', 'https://en.wikipedia.org/wiki/Derartu_Tulu', 'https://en.wikipedia.org/wiki/Kenenisa_Bekele', 'https://en.wikipedia.org/wiki/Meseret_Defar', 'https://en.wikipedia.org/wiki/Tirunesh_Dibaba']
     
     url_loader = UnstructuredURLLoader(urls = urls, show_progress_bar=True)
     loaded_documents = url_loader.load()
@@ -50,7 +50,10 @@ def create_vector_database():
     vector_database.persist()
     
     # query it
-    #query = "Who are the authors of the paper"
+    #query = "Who win both 5000 m and 10,000 m title at the same championships"
+    #query = "Who  the only woman with a 2-mile run in less than 9 minutes"
+    #query = "Which athlet come from sporting family of several Olympic medalists"
+    #query = "Name an ethiopian athlete who  has been serving as President of Athletics Federation"
     #docs = vector_database.similarity_search(query)
 
 
