@@ -34,6 +34,7 @@ EOF
 python -m venv ollama-mistral-env
 .\ollama-mistral-env\Scripts\Activate.ps1
 
+<<<<<<< HEAD
 # Install Required Python Packages
 pip install -r requirements.txt
 
@@ -46,3 +47,10 @@ python ingest.py
 # Launch the Chat UI
 chainlit run main.py
 ```
+=======
+5. Run the following command in your terminal to start the chat UI:
+   ```
+   python3 ingest.py #for ingesting
+   chainlit run main.py #for chainlit ui
+```
+>>>>>>> 5f0604bebf031c45737b13cc7cb0995b092c3932
