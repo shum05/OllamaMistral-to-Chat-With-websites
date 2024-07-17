@@ -51,11 +51,6 @@ python ingest.py
 ```
 # Launch the Chat UI
 ```
-chainlit run main.py
-```
-
-5. Run the following command in your terminal to start the chat UI:
-```
    python3 ingest.py #for ingesting
    chainlit run main.py #for chainlit ui
 ```
