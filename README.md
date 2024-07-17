@@ -3,11 +3,11 @@
 This Chainlit application enables interaction with website URLs through advanced natural language processing capabilities.
 
 ### Features
-```
+
 - **Ollama and Mistral**: Utilizes Ollama AI with the Mistral model, offering robust language understanding and generation capabilities.
 - **LangChain Framework**: Powered by LangChain, a Python framework for integrating and deploying language models.
 - **Chainlit Deployment**: Integrated with Chainlit for seamless deployment and interaction.
-```
+
 ## System Requirements
 
 - Python 3.9 or later installed.
@@ -33,7 +33,7 @@ LANGCHAIN_PROJECT="OllamaMistral_project"
 # Create and Activate Virtual Environment (On Windows)
 ```
 python -m venv ollama-mistral-env
-.\ollama-mistral-env\Scripts\Activate.ps1
+ollama-mistral-env\Scripts\Activate.ps1
 ```
 
 # Install Required Python Packages
