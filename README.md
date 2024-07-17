@@ -47,10 +47,10 @@ ollama pull mistral
 
 # Run Data Ingestion
 ```
-python ingest.py
+python ingest.py #for ingesting
 ```
 # Launch the Chat UI
 ```
-   python3 ingest.py #for ingesting
+   
    chainlit run main.py #for chainlit ui
 ```
