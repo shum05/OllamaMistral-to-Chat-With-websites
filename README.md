@@ -2,7 +2,7 @@
 
 This Chainlit application enables interaction with website URLs through advanced natural language processing capabilities.
 
-### Features
+## Features
 
 - **Ollama and Mistral**: Utilizes Ollama AI with the Mistral model, offering robust language understanding and generation capabilities.
 - **LangChain Framework**: Powered by LangChain, a Python framework for integrating and deploying language models.
@@ -16,50 +16,45 @@ This Chainlit application enables interaction with website URLs through advanced
 ## Steps to Replicate 
 
 
-# Clone the Repository
+### Clone the Repository
 ```
 git clone [https://github.com/shum05/OllamaMistral-to-Chat-With-websites.git]
 cd OllamaMistral-to-Chat-With-websites
 ```
-# Set Up Environment Variables
-# Obtain necessary environment variables from LangSmith website.
-cat .env
+### Set Up Environment Variables
+#### Obtain necessary environment variables from LangSmith website.
 ```
 LANGCHAIN_TRACING_V2=true
 LANGCHAIN_ENDPOINT="https://api.smith.langchain.com"
 LANGCHAIN_API_KEY="lsv2_....."
 LANGCHAIN_PROJECT="OllamaMistral_project"
 ```
-# Create and Activate Virtual Environment (On Windows)
+#### Create and Activate Virtual Environment (On Windows)
 ```
 python -m venv ollama-mistral-env
 ollama-mistral-env\Scripts\Activate.ps1
 ```
 
-# Install Required Python Packages
+### Install Required Python Packages
 ```
 pip install -r requirements.txt
 ```
-# Pull the Mistral Model
+### Pull the Mistral Model
 ```
 ollama pull mistral
 ```
 
-# Run Data Ingestion
-```
-<<<<<<< HEAD
-5. Run the following command in your terminal to start the chat UI:
+#### Run Data Ingestion
+
    ```
-   python3 ingest.py #for ingesting
-   chainlit run main.py #for chainlit ui
+   python ingest.py #for ingesting
+   
 ```
 
-=======
-python ingest.py #for ingesting
-```
-# Launch the Chat UI
+#### Launch the Chat UI
 ```
    
    chainlit run main.py #for chainlit ui
 ```
->>>>>>> 3fafc8aba1707e51c6976a1151d83340350e3d51
+
+### Go to the 'http://localhost:8000/' chainlit page and type your message
