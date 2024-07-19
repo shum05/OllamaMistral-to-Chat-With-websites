@@ -51,7 +51,7 @@ def create_vector_database():
     
     # query it
     #query = "Who win both 5000 m and 10,000 m title at the same championships"
-    #query = "Who  the only woman with a 2-mile run in less than 9 minutes"
+    #query = "Who is the only woman with a 2-mile run in less than 9 minutes"
     #query = "Which athlet come from sporting family of several Olympic medalists"
     #query = "Name an ethiopian athlete who  has been serving as President of Athletics Federation"
     #docs = vector_database.similarity_search(query)

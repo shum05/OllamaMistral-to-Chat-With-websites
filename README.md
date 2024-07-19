@@ -3,11 +3,11 @@
 This Chainlit application enables interaction with website URLs through advanced natural language processing capabilities.
 
 ### Features
-```
+
 - **Ollama and Mistral**: Utilizes Ollama AI with the Mistral model, offering robust language understanding and generation capabilities.
 - **LangChain Framework**: Powered by LangChain, a Python framework for integrating and deploying language models.
 - **Chainlit Deployment**: Integrated with Chainlit for seamless deployment and interaction.
-```
+
 ## System Requirements
 
 - Python 3.9 or later installed.
@@ -47,10 +47,9 @@ python ingest.py
 # Launch the Chat UI
 chainlit run main.py
 ```
-=======
 5. Run the following command in your terminal to start the chat UI:
    ```
    python3 ingest.py #for ingesting
    chainlit run main.py #for chainlit ui
 ```
->>>>>>> 5f0604bebf031c45737b13cc7cb0995b092c3932
+

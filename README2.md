@@ -2,15 +2,15 @@
 Simple Chainlit app to have interaction with website URLs.
 
 ### Chat with your documents 
+```
 - [Ollama](https://ollama.ai/) and `mistral` as llm
 - [LangChain](https://python.langchain.com/en/latest/modules/models/llms/integrations/huggingface_hub.html) as a Framework for LLM
 - [Chainlit](https://docs.chainlit.io/) for deploying.
-
+```
 ## System Requirements
 
 must have Python 3.9 or later installed. 
 
----
 
 ## Steps to Replicate 
 
